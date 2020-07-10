@@ -8,10 +8,10 @@ namespace CentralDeErros.API.Models
 {
     public class Error
     {
-        public int IdError { get; set; }
+        public int Id { get; set; }
         public string Description { get; set; }
         public string Title { get; set; }
-        public int IdLevel { get; set; }
+        public int LevelId { get; set; }
         public Level Level { get; set; }
 
         public ICollection<Level> Levels { get; set; }
