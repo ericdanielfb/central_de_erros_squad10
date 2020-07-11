@@ -14,6 +14,7 @@ namespace CentralDeErros.API.Models
         public int LevelId { get; set; }
         public Level Level { get; set; }
 
-        public ICollection<Level> Levels { get; set; }
+        public ICollection<Occurrence> Occurrences { get; set; }
+
     }
 }

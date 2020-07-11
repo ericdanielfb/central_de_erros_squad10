@@ -9,7 +9,7 @@ namespace CentralDeErros.API.Models
 {
     public class Occurrence
     {
-        public int OccurrenceId { get; set; }
+        public int Id { get; set; }
 
         public int Origin { get; set; }
 
@@ -17,10 +17,17 @@ namespace CentralDeErros.API.Models
 
         public DateTime OccurrenceDate { get; set; }
 
-        [ForeignKey("UserId")]
+        public int UserId { get; set; }
+
         public User User { get; set; }
 
-        public int UserId { get; set; }
+        public int ErrorId { get; set; }
+        
+        public Error Error { get; set; }
+
+        public int EnvironmentId { get; set; }
+
+        public Environment Environment { get; set; }
 
     }
 }

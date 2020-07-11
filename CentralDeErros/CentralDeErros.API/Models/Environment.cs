@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 
 namespace CentralDeErros.API.Models
 {
-    public class Level
+    public class Environment
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Phase { get; set; }
 
-        public ICollection<Error> Errors { get; set; }
+        public ICollection<Occurrence> Occurrences { get; set; }
+
     }
 }
