@@ -25,7 +25,7 @@ namespace CentralDeErros.API.Models
         
         public Error Error { get; set; }
 
-        public int EvironmentId { get; set; }
+        public int EnvironmentId { get; set; }
 
         public Environment Environment { get; set; }
 
